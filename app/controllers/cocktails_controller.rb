@@ -27,7 +27,7 @@ class CocktailsController < ApplicationController
 
   def update
     if @cocktail.update(cocktail_params)
-      redirect_to cocktail_path(@cocktail)
+      redirect_to cocktails_path
     else
       render :edit
     end
@@ -41,7 +41,7 @@ class CocktailsController < ApplicationController
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :description, :photo)
   end
 
   def set_cocktail
