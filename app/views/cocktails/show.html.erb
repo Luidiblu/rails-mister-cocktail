@@ -1,5 +1,5 @@
 <div class="container mt-2" style="background-color: white;">
-  <%= @cocktail.photo %>
+  <%= cl_image_tag @cocktail.photo, height: 400, width: 300, style: 'object-fit: cover; width: 300px; height: 400px;'%>
   <button class="btn btn-primary">
     <%= link_to 'Edit', edit_cocktail_path, :class => "btn" %>
   </button>

@@ -42,6 +42,8 @@ gem 'font-awesome-sass', '~> 5.6.1'
 
 gem 'simple_form'
 
+gem 'roberto_barros', '~> 0.0.3'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

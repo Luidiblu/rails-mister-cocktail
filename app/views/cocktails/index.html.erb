@@ -12,7 +12,7 @@
   <%= link_to cocktail_path(cocktail) do%>
     <article class="card">
       <picture class="thumbnail">
-           <img class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))," src="https://source.unsplash.com/random?<%= cocktail.name%>" alt="" />
+           <img class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))," src="<%= cocktail.photo %>" alt="" />
       </picture>
       <div class="card-content">
         <h2><%= cocktail.name %></h2>
